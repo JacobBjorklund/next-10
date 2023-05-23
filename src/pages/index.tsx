@@ -18,6 +18,10 @@ export default function WordCounter() {
 
     const charactersWithoutSpaces = inputText.replace(/\s+/g, '').length;
     setCharacterCountWithoutSpaces(charactersWithoutSpaces);
+
+    if (inputText == '') {
+      setWordCount(0)
+    }
   };
 
   return (
